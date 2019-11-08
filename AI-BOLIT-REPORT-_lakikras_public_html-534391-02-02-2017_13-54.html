@@ -1,0 +1,519 @@
+<html>
+<head>
+<!-- revisium.com/ai/ -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+<META NAME="ROBOTS" CONTENT="NOINDEX,NOFOLLOW">
+<title>Отчет по /home/lakikras/public_html</title>
+<style type="text/css" title="currentStyle">
+	@import "https://revisium.com/extra/media/css/demo_page2.css";
+	@import "https://revisium.com/extra/media/css/jquery.dataTables2.css";
+</style>
+
+<script type="text/javascript" language="javascript" src="https://yandex.st/jquery/2.1.0/jquery.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://datatables.net/download/build/jquery.dataTables.js"></script>
+
+<style type="text/css">
+ body 
+ {
+   font-family: Tahoma;
+   color: #5a5a5a;
+   background: #FFFFFF;
+   font-size: 14px;
+   margin: 20px;
+   padding: 0;
+ }
+
+.header
+ {
+   font-size: 34px;
+   margin: 0 0 10px 0;
+ }
+
+ .hidd
+ {
+    display: none;
+ }
+ 
+ .ok
+ {
+    color: green;
+ }
+ 
+ .line_no
+ {
+   -webkit-border-radius: 6px;
+   -moz-border-radius: 6px;
+   border-radius: 6px;
+
+   background: #DAF2C1;
+   padding: 2px 5px 2px 5px;
+   margin: 0 5px 0 5px;
+ }
+ 
+ .credits_header 
+ {
+  -webkit-border-radius: 6px;
+   -moz-border-radius: 6px;
+   border-radius: 6px;
+
+   background: #F2F2F2;
+   padding: 10px;
+   font-size: 11px;
+    margin: 0 0 10px 0;
+ }
+ 
+ .marker
+ {
+    color: #FF0090;
+	font-weight: 100;
+	background: #FF0090;
+	padding: 2px 0px 2px 0px;
+	width: 2px;
+ }
+ 
+ .title
+ {
+   font-size: 24px;
+   margin: 20px 0 10px 0;
+   color: #9CA9D1;
+}
+
+.summary 
+{
+  float: left;
+  width: 500px;
+}
+
+.summary TD
+{
+  font-size: 12px;
+  border-bottom: 1px solid #F0F0F0;
+  font-weight: 700;
+  padding: 10px 0 10px 0;
+}
+ 
+.crit, .vir
+{
+  color: #D84B55;
+}
+
+.intitem
+{
+  color:#4a6975;
+}
+
+.spacer
+{
+   margin: 0 0 50px 0;
+   clear:both;
+}
+
+.warn
+{
+  color: #F6B700;
+}
+
+.clear
+{
+   clear: both;
+}
+
+.offer
+{
+  -webkit-border-radius: 6px;
+   -moz-border-radius: 6px;
+   border-radius: 6px;
+
+   width: 500px;
+   background: #ECF7DE;
+   color: #747474;
+   font-size: 11px;
+   font-family: Arial;
+   padding: 20px;
+   margin: 20px 0 0 500px;
+   
+   font-size: 16px;
+}
+ 
+.flist
+{
+   font-family: Arial;
+}
+
+.flist TD
+{
+   font-size: 11px;
+   padding: 5px;
+}
+
+.flist TH
+{
+   font-size: 12px;
+   height: 30px;
+   padding: 5px;
+   background: #CEE9EF;
+}
+
+
+.it
+{
+   font-size: 14px;
+   font-weight: 100;
+   margin-top: 10px;
+}
+
+.crit .it A {
+   color: #E50931; 
+   line-height: 25px;
+   text-decoration: none;
+}
+
+.warn .it A {
+   color: #F2C900; 
+   line-height: 25px;
+   text-decoration: none;
+}
+
+
+
+.details
+{
+   font-family: Calibri;
+   font-size: 12px;
+   margin: 10px 10px 10px 0px;
+}
+
+.crit .details
+{
+   color: #A08080;
+}
+
+.warn .details
+{
+   color: #808080;
+}
+
+.details A
+{
+  color: #FFF;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 2px;
+  background: #E5CEDE;
+  -webkit-border-radius: 7px;
+   -moz-border-radius: 7px;
+   border-radius: 7px;
+}
+
+.details A:hover
+{
+   background: #A0909B;
+}
+
+.ctd
+{
+   margin: 10px 0px 10px 0;
+   align:center;
+}
+
+.ctd A 
+{
+   color: #0D9922;
+}
+
+.disclaimer
+{
+   color: darkgreen;
+   margin: 10px 10px 10px 0;
+}
+
+.note_vir
+{
+   margin: 10px 0 10px 0;
+   //padding: 10px;
+   color: #FF4F4F;
+   font-size: 15px;
+   font-weight: 700;
+   clear:both;
+  
+}
+
+.note_warn
+{
+   margin: 10px 0 10px 0;
+   color: #F6B700;
+   font-size: 15px;
+   font-weight: 700;
+   clear:both;
+}
+
+.note_int
+{
+   margin: 10px 0 10px 0;
+   color: #60b5d6;
+   font-size: 15px;
+   font-weight: 700;
+   clear:both;
+}
+
+.updateinfo
+{
+  color: #FFF;
+  text-decoration: none;
+  background: #E5CEDE;
+  -webkit-border-radius: 7px;
+   -moz-border-radius: 7px;
+   border-radius: 7px;
+
+  margin: 10px 0 10px 0px;   
+  padding: 10px;
+}
+
+
+.caution
+{
+  color: #EF7B75;
+  text-decoration: none;
+  margin: 20px 0 0px 0px;   
+  font-size: 12px;
+}
+
+.footer
+{
+  color: #303030;
+  text-decoration: none;
+  background: #F4F4F4;
+  -webkit-border-radius: 7px;
+   -moz-border-radius: 7px;
+   border-radius: 7px;
+
+  margin: 80px 0 10px 0px;   
+  padding: 10px;
+}
+
+.rep
+{
+  color: #303030;
+  text-decoration: none;
+  background: #94DDDB;
+  -webkit-border-radius: 7px;
+   -moz-border-radius: 7px;
+   border-radius: 7px;
+
+  margin: 10px 0 10px 0px;   
+  padding: 10px;
+  font-size: 12px;
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="header">Отчет сканера <a href="https://revisium.com/ai/">AI-Bolit</a> v20161106: /home/lakikras/public_html/ (1/1)</div>
+<div class="credits_header">Скрипт бесплатный только для личного некоммерческого использования. Есть <a href="https://revisium.com/ai/faq.php#faq11" target=_blank>коммерческая лицензия</a> (пункт №11).</div>
+<div class="details_header">
+   Затрачено времени: <b>1 m 15 s</b>. Сканирование начато 02-02-2017 в 13:54:26, сканирование завершено 02-02-2017 в 13:55:41<br/>
+   Всего проверено 1092 директорий и 14446 файлов. Использовано памяти при сканировании: 4.26 Mb.
+ </div>
+
+ 
+ 
+ <div class="summary">
+<div class="title">Сводный отчет</div><table cellspacing=0 border=0><tr><td class="warn" width=400>Пропущенных больших файлов</td><td class="warn">41</td></tr></table><!--[json]{"redirect":0,"critical_php":0,"critical_js":0,"phishing":0,"unix_exec":0,"iframes":0,"not_read":0,"base64":0,"heuristics":0,"symlinks":0,"big_files_skipped":41}[/json]--><div class=details style="margin: 20px 20px 20px 0">Обращаем внимание, что обнаруженные файлы не всегда являются вирусами и хакерскими скриптами. Сканер старается минимизировать число ложных обнаружений, но это не всегда возможно, так как найденный фрагмент может встречаться как во вредоносных скриптах, так и в обычных.</div>
+
+ </div>
+ 
+ <div class="offer">
+Обращаем внимание на то, что большинство CMS <b>без дополнительной защиты</b> рано или поздно <b>взламывают</b>.<p> Компания <a href="https://revisium.com/">"Ревизиум"</a> предлагает услугу превентивной защиты сайта от взлома с использованием уникальной <b>процедуры "цементирования сайта"</b>. Подробно на <a href="https://revisium.com/ru/client_protect/">странице услуги</a>. <p>Лучшее лечение &mdash; это профилактика.
+ </div>
+  
+ <div class="clear"></div>
+ 
+ <div class="title">Критические замечания</div><div class="ok"><b>Вредоносные скрипты не найдены. Попробуйте сканер в режиме "Параноидальный".</b></div><div style="margin-top: 20px" class="title">Предупреждения</div><div class="note_warn">Большие файлы (больше чем 600.00 Kb). Пропущено</div><div class="warn"><div class="flist"><table cellspacing=1 cellpadding=4 border=0 id="table_8629041"><thead><tr class="tbgh0"><th width=70%>Путь</th><th>Изменение свойств</th><th>Изменение содержимого</th><th width=90>Размер</th><th width=0 class="hidd">CRC32</th><th width=0 class="hidd"></th><th width=0 class="hidd"></th><th width=0 class="hidd"></th></tr></thead><tbody><tr class="tbg0" o="id_z7952656"><td><div class="it"><a class="it">/home/lakikras/public_html/engine/cache/system/category.php</a></div></td><td align=center><div class="ctd">17/12/2016 10:15:35</div></td><td align=center><div class="ctd">07/10/2016 10:54:47</div></td><td align=center><div class="ctd">932.04 Kb</div></td><td class="hidd"><div class="hidd">da39a3ee5e6b4b0d3255bfef95601890afd80709</div></td><td class="hidd"><div class="hidd">1481962535</div></td><td class="hidd"><div class="hidd">1475826887</div></td><td class="hidd"><div class="hidd">id_z7952656</div></td></tr><tr class="tbg1" o="id_z4478286"><td><div class="it"><a class="it">/home/lakikras/public_html/engine/modules/ajax/error_log</a></div></td><td align=center><div class="ctd">02/02/2017 12:07:01</div></td><td align=center><div class="ctd">02/02/2017 12:07:01</div></td><td align=center><div class="ctd">37.64 Mb</div></td><td class="hidd"><div class="hidd">da39a3ee5e6b4b0d3255bfef95601890afd80709</div></td><td class="hidd"><div class="hidd">1486030021</div></td><td class="hidd"><div class="hidd">1486030021</div></td><td class="hidd"><div class="hidd">id_z4478286</div></td></tr><tr class="tbg0" o="id_z1691260"><td><div class="it"><a class="it">/home/lakikras/public_html/engine/modules/error_log</a></div></td><td align=center><div class="ctd">01/02/2017 23:34:56</div></td><td align=center><div class="ctd">01/02/2017 23:34:56</div></td><td align=center><div class="ctd">2.17 Mb</div></td><td class="hidd"><div class="hidd">da39a3ee5e6b4b0d3255bfef95601890afd80709</div></td><td class="hidd"><div class="hidd">1485984896</div></td><td class="hidd"><div class="hidd">1485984896</div></td><td class="hidd"><div class="hidd">id_z1691260</div></td></tr><tr class="tbg1" o="id_z1482345"><td><div class="it"><a class="it">/home/lakikras/public_html/engine((/cache/system/category.php</a></div></td><td align=center><div class="ctd">17/12/2016 10:15:30</div></td><td align=center><div class="ctd">06/10/2016 18:59:17</div></td><td align=center><div class="ctd">943.12 Kb</div></td><td class="hidd"><div class="hidd">da39a3ee5e6b4b0d3255bfef95601890afd80709</div></td><td class="hidd"><div class="hidd">1481962530</div></td><td class="hidd"><div class="hidd">1475769557</div></td><td class="hidd"><div class="hidd">id_z1482345</div></td></tr><tr class="tbg0" o="id_z1485139"><td><div class="it"><a class="it">/home/lakikras/public_html/engine((/error_log</a></div></td><td align=center><div class="ctd">17/12/2016 10:15:30</div></td><td align=center><div class="ctd">06/10/2016 19:00:46</div></td><td align=center><div class="ctd">39.39 Mb</div></td><td class="hidd"><div class="hidd">da39a3ee5e6b4b0d3255bfef95601890afd80709</div></td><td class="hidd"><div class="hidd">1481962530</div></td><td class="hidd"><div class="hidd">1475769646</div></td><td class="hidd"><div class="hidd">id_z1485139</div></td></tr><tr class="tbg1" o="id_z6011819"><td><div class="it"><a class="it">/home/lakikras/public_html/engine((/modules/ajax/error_log</a></div></td><td align=center><div class="ctd">17/12/2016 10:15:33</div></td><td align=center><div class="ctd">06/10/2016 19:14:09</div></td><td align=center><div class="ctd">20.67 Mb</div></td><td class="hidd"><div class="hidd">da39a3ee5e6b4b0d3255bfef95601890afd80709</div></td><td class="hidd"><div class="hidd">1481962533</div></td><td class="hidd"><div class="hidd">1475770449</div></td><td class="hidd"><div class="hidd">id_z6011819</div></td></tr><tr class="tbg0" o="id_z4533336"><td><div class="it"><a class="it">/home/lakikras/public_html/engine((/modules/error_log</a></div></td><td align=center><div class="ctd">17/12/2016 10:15:32</div></td><td align=center><div class="ctd">06/10/2016 18:59:14</div></td><td align=center><div class="ctd">2.09 Mb</div></td><td class="hidd"><div class="hidd">da39a3ee5e6b4b0d3255bfef95601890afd80709</div></td><td class="hidd"><div class="hidd">1481962532</div></td><td class="hidd"><div class="hidd">1475769554</div></td><td class="hidd"><div class="hidd">id_z4533336</div></td></tr><tr class="tbg1" o="id_z2136748"><td><div class="it"><a class="it">/home/lakikras/public_html/backup/lakikras_laki_2015-02-23_13-06_16e5c.sql.gz</a></div></td><td align=center><div class="ctd">17/12/2016 10:15:26</div></td><td align=center><div class="ctd">23/02/2015 13:06:08</div></td><td align=center><div class="ctd">2.90 Mb</div></td><td class="hidd"><div class="hidd">da39a3ee5e6b4b0d3255bfef95601890afd80709</div></td><td class="hidd"><div class="hidd">1481962526</div></td><td class="hidd"><div class="hidd">1424689568</div></td><td class="hidd"><div class="hidd">id_z2136748</div></td></tr><tr class="tbg0" o="id_z6169953"><td><div class="it"><a class="it">/home/lakikras/public_html/backup/lakikras_laki_2015-02-23_13-06_16e5c.sql</a></div></td><td align=center><div class="ctd">17/12/2016 10:15:26</div></td><td align=center><div class="ctd">23/02/2015 13:06:24</div></td><td align=center><div class="ctd">25.66 Mb</div></td><td class="hidd"><div class="hidd">da39a3ee5e6b4b0d3255bfef95601890afd80709</div></td><td class="hidd"><div class="hidd">1481962526</div></td><td class="hidd"><div class="hidd">1424689584</div></td><td class="hidd"><div class="hidd">id_z6169953</div></td></tr><tr class="tbg1" o="id_z6794495"><td><div class="it"><a class="it">/home/lakikras/public_html/backup/lakikras_laki_2013-09-12_22-18_8031a.sql</a></div></td><td align=center><div class="ctd">17/12/2016 10:15:25</div></td><td align=center><div class="ctd">29/09/2014 18:36:25</div></td><td align=center><div class="ctd">25.96 Mb</div></td><td class="hidd"><div class="hidd">da39a3ee5e6b4b0d3255bfef95601890afd80709</div></td><td class="hidd"><div class="hidd">1481962525</div></td><td class="hidd"><div class="hidd">1412004985</div></td><td class="hidd"><div class="hidd">id_z6794495</div></td></tr><tr class="tbg0" o="id_z8193511"><td><div class="it"><a class="it">/home/lakikras/public_html/backup/lakikras_laki_2013-12-10_14-21_393aa.sql.gz</a></div></td><td align=center><div class="ctd">17/12/2016 10:15:25</div></td><td align=center><div class="ctd">29/09/2014 18:35:46</div></td><td align=center><div class="ctd">2.84 Mb</div></td><td class="hidd"><div class="hidd">da39a3ee5e6b4b0d3255bfef95601890afd80709</div></td><td class="hidd"><div class="hidd">1481962525</div></td><td class="hidd"><div class="hidd">1412004946</div></td><td class="hidd"><div class="hidd">id_z8193511</div></td></tr><tr class="tbg1" o="id_z4244873"><td><div class="it"><a class="it">/home/lakikras/public_html/backup/lakikras_laki_2016-10-07_13-59_120f0.sql</a></div></td><td align=center><div class="ctd">17/12/2016 10:15:28</div></td><td align=center><div class="ctd">07/10/2016 16:59:02</div></td><td align=center><div class="ctd">25.68 Mb</div></td><td class="hidd"><div class="hidd">da39a3ee5e6b4b0d3255bfef95601890afd80709</div></td><td class="hidd"><div class="hidd">1481962528</div></td><td class="hidd"><div class="hidd">1475848742</div></td><td class="hidd"><div class="hidd">id_z4244873</div></td></tr><tr class="tbg0" o="id_z3666054"><td><div class="it"><a class="it">/home/lakikras/public_html/lakikras_laki_julia.sql</a></div></td><td align=center><div class="ctd">17/12/2016 10:15:21</div></td><td align=center><div class="ctd">07/10/2016 12:28:18</div></td><td align=center><div class="ctd">30.70 Mb</div></td><td class="hidd"><div class="hidd">da39a3ee5e6b4b0d3255bfef95601890afd80709</div></td><td class="hidd"><div class="hidd">1481962521</div></td><td class="hidd"><div class="hidd">1475832498</div></td><td class="hidd"><div class="hidd">id_z3666054</div></td></tr><tr class="tbg1" o="id_z4767801"><td><div class="it"><a class="it">/home/lakikras/public_html/uploads/sitemap.xml</a></div></td><td align=center><div class="ctd">17/12/2016 10:15:48</div></td><td align=center><div class="ctd">06/10/2016 20:02:19</div></td><td align=center><div class="ctd">936.23 Kb</div></td><td class="hidd"><div class="hidd">da39a3ee5e6b4b0d3255bfef95601890afd80709</div></td><td class="hidd"><div class="hidd">1481962548</div></td><td class="hidd"><div class="hidd">1475773339</div></td><td class="hidd"><div class="hidd">id_z4767801</div></td></tr><tr class="tbg0" o="id_z1627131"><td><div class="it"><a class="it">/home/lakikras/public_html/uploads/color/koncentrirovannye-krasiteli-st-770-stain-concentrat-91604-xxxxx-akzonobel-wood-coatings_x_4923_x_91604-03085.png</a></div></td><td align=center><div class="ctd">17/12/2016 10:15:57</div></td><td align=center><div class="ctd">06/10/2016 20:05:15</div></td><td align=center><div class="ctd">767.40 Kb</div></td><td class="hidd"><div class="hidd">da39a3ee5e6b4b0d3255bfef95601890afd80709</div></td><td class="hidd"><div class="hidd">1481962557</div></td><td class="hidd"><div class="hidd">1475773515</div></td><td class="hidd"><div class="hidd">id_z1627131</div></td></tr><tr class="tbg1" o="id_z1581571"><td><div class="it"><a class="it">/home/lakikras/public_html/lakikras_laki_utf8.sql</a></div></td><td align=center><div class="ctd">17/12/2016 10:15:24</div></td><td align=center><div class="ctd">07/10/2016 12:36:34</div></td><td align=center><div class="ctd">30.70 Mb</div></td><td class="hidd"><div class="hidd">da39a3ee5e6b4b0d3255bfef95601890afd80709</div></td><td class="hidd"><div class="hidd">1481962524</div></td><td class="hidd"><div class="hidd">1475832994</div></td><td class="hidd"><div class="hidd">id_z1581571</div></td></tr><tr class="tbg0" o="id_z2965945"><td><div class="it"><a class="it">/home/lakikras/public_html/earth/earth.fla</a></div></td><td align=center><div class="ctd">17/12/2016 10:15:28</div></td><td align=center><div class="ctd">07/10/2016 10:20:14</div></td><td align=center><div class="ctd">1.86 Mb</div></td><td class="hidd"><div class="hidd">da39a3ee5e6b4b0d3255bfef95601890afd80709</div></td><td class="hidd"><div class="hidd">1481962528</div></td><td class="hidd"><div class="hidd">1475824814</div></td><td class="hidd"><div class="hidd">id_z2965945</div></td></tr><tr class="tbg1" o="id_z7876637"><td><div class="it"><a class="it">/home/lakikras/public_html/earth/earth.swf</a></div></td><td align=center><div class="ctd">17/12/2016 10:15:28</div></td><td align=center><div class="ctd">07/10/2016 10:20:13</div></td><td align=center><div class="ctd">1.13 Mb</div></td><td class="hidd"><div class="hidd">da39a3ee5e6b4b0d3255bfef95601890afd80709</div></td><td class="hidd"><div class="hidd">1481962528</div></td><td class="hidd"><div class="hidd">1475824813</div></td><td class="hidd"><div class="hidd">id_z7876637</div></td></tr><tr class="tbg0" o="id_z5817498"><td><div class="it"><a class="it">/home/lakikras/public_html/error_log</a></div></td><td align=center><div class="ctd">02/02/2017 10:53:51</div></td><td align=center><div class="ctd">02/02/2017 10:53:51</div></td><td align=center><div class="ctd">2.43 Mb</div></td><td class="hidd"><div class="hidd">da39a3ee5e6b4b0d3255bfef95601890afd80709</div></td><td class="hidd"><div class="hidd">1486025631</div></td><td class="hidd"><div class="hidd">1486025631</div></td><td class="hidd"><div class="hidd">id_z5817498</div></td></tr><tr class="tbg1" o="id_z5091457"><td><div class="it"><a class="it">/home/lakikras/public_html/excel/all________________Result__page_too_large,_not_fully_downloaded;_used_self-learning_system_data;_no_post_sending_forms_are_found;.xls</a></div></td><td align=center><div class="ctd">17/12/2016 10:15:43</div></td><td align=center><div class="ctd">07/10/2016 10:21:40</div></td><td align=center><div class="ctd">825.73 Kb</div></td><td class="hidd"><div class="hidd">da39a3ee5e6b4b0d3255bfef95601890afd80709</div></td><td class="hidd"><div class="hidd">1481962543</div></td><td class="hidd"><div class="hidd">1475824900</div></td><td class="hidd"><div class="hidd">id_z5091457</div></td></tr><tr class="tbg0" o="id_z7931474"><td><div class="it"><a class="it">/home/lakikras/public_html/excel/all________________Result__page_too_large,_not_fully_downloaded;_no_post_sending_forms_are_found;.xls</a></div></td><td align=center><div class="ctd">17/12/2016 10:15:43</div></td><td align=center><div class="ctd">06/10/2016 19:59:58</div></td><td align=center><div class="ctd">827.36 Kb</div></td><td class="hidd"><div class="hidd">da39a3ee5e6b4b0d3255bfef95601890afd80709</div></td><td class="hidd"><div class="hidd">1481962543</div></td><td class="hidd"><div class="hidd">1475773198</div></td><td class="hidd"><div class="hidd">id_z7931474</div></td></tr><tr class="tbg1" o="id_z3619655"><td><div class="it"><a class="it">/home/lakikras/public_html/excel/all_and_1=1.xls</a></div></td><td align=center><div class="ctd">17/12/2016 10:15:43</div></td><td align=center><div class="ctd">07/10/2016 10:21:40</div></td><td align=center><div class="ctd">881.32 Kb</div></td><td class="hidd"><div class="hidd">da39a3ee5e6b4b0d3255bfef95601890afd80709</div></td><td class="hidd"><div class="hidd">1481962543</div></td><td class="hidd"><div class="hidd">1475824900</div></td><td class="hidd"><div class="hidd">id_z3619655</div></td></tr><tr class="tbg0" o="id_z7367466"><td><div class="it"><a class="it">/home/lakikras/public_html/excel/-1\&#039;.xls</a></div></td><td align=center><div class="ctd">17/12/2016 10:15:42</div></td><td align=center><div class="ctd">17/11/2014 13:54:34</div></td><td align=center><div class="ctd">871.75 Kb</div></td><td class="hidd"><div class="hidd">da39a3ee5e6b4b0d3255bfef95601890afd80709</div></td><td class="hidd"><div class="hidd">1481962542</div></td><td class="hidd"><div class="hidd">1416225274</div></td><td class="hidd"><div class="hidd">id_z7367466</div></td></tr><tr class="tbg1" o="id_z3827729"><td><div class="it"><a class="it">/home/lakikras/public_html/excel/all________________Result__�������_�������_���������,_��_��������;_��_�������_�����_���_��������;.xls</a></div></td><td align=center><div class="ctd">17/12/2016 10:15:43</div></td><td align=center><div class="ctd">07/10/2016 10:21:41</div></td><td align=center><div class="ctd">870.66 Kb</div></td><td class="hidd"><div class="hidd">da39a3ee5e6b4b0d3255bfef95601890afd80709</div></td><td class="hidd"><div class="hidd">1481962543</div></td><td class="hidd"><div class="hidd">1475824901</div></td><td class="hidd"><div class="hidd">id_z3827729</div></td></tr><tr class="tbg0" o="id_z1724596"><td><div class="it"><a class="it">/home/lakikras/public_html/excel/all3.htmle-le-bilan-de-son-usine-d-Angers-_NG_-2012-05-25-810721.xls</a></div></td><td align=center><div class="ctd">17/12/2016 10:15:43</div></td><td align=center><div class="ctd">07/10/2016 10:21:39</div></td><td align=center><div class="ctd">729.41 Kb</div></td><td class="hidd"><div class="hidd">da39a3ee5e6b4b0d3255bfef95601890afd80709</div></td><td class="hidd"><div class="hidd">1481962543</div></td><td class="hidd"><div class="hidd">1475824899</div></td><td class="hidd"><div class="hidd">id_z1724596</div></td></tr><tr class="tbg1" o="id_z5503028"><td><div class="it"><a class="it">/home/lakikras/public_html/excel/allРљРђРўРђР›РћР“.xls</a></div></td><td align=center><div class="ctd">17/12/2016 10:15:43</div></td><td align=center><div class="ctd">07/10/2016 10:21:41</div></td><td align=center><div class="ctd">879.41 Kb</div></td><td class="hidd"><div class="hidd">da39a3ee5e6b4b0d3255bfef95601890afd80709</div></td><td class="hidd"><div class="hidd">1481962543</div></td><td class="hidd"><div class="hidd">1475824901</div></td><td class="hidd"><div class="hidd">id_z5503028</div></td></tr><tr class="tbg0" o="id_z7899584"><td><div class="it"><a class="it">/home/lakikras/public_html/excel/Teknos_Oy_Пром.xls</a></div></td><td align=center><div class="ctd">17/12/2016 10:15:43</div></td><td align=center><div class="ctd">01/10/2014 13:29:05</div></td><td align=center><div class="ctd">726.59 Kb</div></td><td class="hidd"><div class="hidd">da39a3ee5e6b4b0d3255bfef95601890afd80709</div></td><td class="hidd"><div class="hidd">1481962543</div></td><td class="hidd"><div class="hidd">1412159345</div></td><td class="hidd"><div class="hidd">id_z7899584</div></td></tr><tr class="tbg1" o="id_z4778383"><td><div class="it"><a class="it">/home/lakikras/public_html/excel/all________________Result__слишком_большая_страничка,_не_докачано;_не_нашлось_формы_для_отправки;.xls</a></div></td><td align=center><div class="ctd">17/12/2016 10:15:43</div></td><td align=center><div class="ctd">06/10/2016 19:59:59</div></td><td align=center><div class="ctd">870.66 Kb</div></td><td class="hidd"><div class="hidd">da39a3ee5e6b4b0d3255bfef95601890afd80709</div></td><td class="hidd"><div class="hidd">1481962543</div></td><td class="hidd"><div class="hidd">1475773199</div></td><td class="hidd"><div class="hidd">id_z4778383</div></td></tr><tr class="tbg0" o="id_z6754500"><td><div class="it"><a class="it">/home/lakikras/public_html/excel/all_AND_1=1.xls</a></div></td><td align=center><div class="ctd">17/12/2016 10:15:43</div></td><td align=center><div class="ctd">30/06/2016 14:47:36</div></td><td align=center><div class="ctd">881.32 Kb</div></td><td class="hidd"><div class="hidd">da39a3ee5e6b4b0d3255bfef95601890afd80709</div></td><td class="hidd"><div class="hidd">1481962543</div></td><td class="hidd"><div class="hidd">1467287256</div></td><td class="hidd"><div class="hidd">id_z6754500</div></td></tr><tr class="tbg1" o="id_z4174708"><td><div class="it"><a class="it">/home/lakikras/public_html/excel/Tikkurila_Paints%28%D4%E8%ED%EB%FF%ED%E4%E8%FF%29.xls</a></div></td><td align=center><div class="ctd">06/01/2017 10:08:52</div></td><td align=center><div class="ctd">06/01/2017 10:08:52</div></td><td align=center><div class="ctd">876.48 Kb</div></td><td class="hidd"><div class="hidd">da39a3ee5e6b4b0d3255bfef95601890afd80709</div></td><td class="hidd"><div class="hidd">1483690132</div></td><td class="hidd"><div class="hidd">1483690132</div></td><td class="hidd"><div class="hidd">id_z4174708</div></td></tr><tr class="tbg0" o="id_z4407424"><td><div class="it"><a class="it">/home/lakikras/public_html/excel/all2121121121212.1.xls</a></div></td><td align=center><div class="ctd">17/12/2016 10:15:43</div></td><td align=center><div class="ctd">30/06/2016 14:47:11</div></td><td align=center><div class="ctd">881.32 Kb</div></td><td class="hidd"><div class="hidd">da39a3ee5e6b4b0d3255bfef95601890afd80709</div></td><td class="hidd"><div class="hidd">1481962543</div></td><td class="hidd"><div class="hidd">1467287231</div></td><td class="hidd"><div class="hidd">id_z4407424</div></td></tr><tr class="tbg1" o="id_z5707155"><td><div class="it"><a class="it">/home/lakikras/public_html/excel/all________________Result__�������_�������_���������,_��_��������;_��_�������_�����_���_��������;_Result__�������_�������_���������,_��_��������;_��_�������_�����_���_��������;.xls</a></div></td><td align=center><div class="ctd">17/12/2016 10:15:43</div></td><td align=center><div class="ctd">06/10/2016 19:59:59</div></td><td align=center><div class="ctd">870.66 Kb</div></td><td class="hidd"><div class="hidd">da39a3ee5e6b4b0d3255bfef95601890afd80709</div></td><td class="hidd"><div class="hidd">1481962543</div></td><td class="hidd"><div class="hidd">1475773199</div></td><td class="hidd"><div class="hidd">id_z5707155</div></td></tr><tr class="tbg0" o="id_z7652995"><td><div class="it"><a class="it">/home/lakikras/public_html/excel/allКАТАЛОГ.xls</a></div></td><td align=center><div class="ctd">17/12/2016 10:15:43</div></td><td align=center><div class="ctd">06/10/2016 20:00:00</div></td><td align=center><div class="ctd">869.85 Kb</div></td><td class="hidd"><div class="hidd">da39a3ee5e6b4b0d3255bfef95601890afd80709</div></td><td class="hidd"><div class="hidd">1481962543</div></td><td class="hidd"><div class="hidd">1475773200</div></td><td class="hidd"><div class="hidd">id_z7652995</div></td></tr><tr class="tbg1" o="id_z5098684"><td><div class="it"><a class="it">/home/lakikras/public_html/excel/Teknos_Oy_����.xls</a></div></td><td align=center><div class="ctd">17/12/2016 10:15:43</div></td><td align=center><div class="ctd">06/10/2016 20:00:04</div></td><td align=center><div class="ctd">726.59 Kb</div></td><td class="hidd"><div class="hidd">da39a3ee5e6b4b0d3255bfef95601890afd80709</div></td><td class="hidd"><div class="hidd">1481962543</div></td><td class="hidd"><div class="hidd">1475773204</div></td><td class="hidd"><div class="hidd">id_z5098684</div></td></tr><tr class="tbg0" o="id_z6189501"><td><div class="it"><a class="it">/home/lakikras/public_html/lakikras_laki_dumpcp1251.sql</a></div></td><td align=center><div class="ctd">17/12/2016 10:15:17</div></td><td align=center><div class="ctd">07/10/2016 13:24:29</div></td><td align=center><div class="ctd">30.50 Mb</div></td><td class="hidd"><div class="hidd">da39a3ee5e6b4b0d3255bfef95601890afd80709</div></td><td class="hidd"><div class="hidd">1481962517</div></td><td class="hidd"><div class="hidd">1475835869</div></td><td class="hidd"><div class="hidd">id_z6189501</div></td></tr><tr class="tbg1" o="id_z8138135"><td><div class="it"><a class="it">/home/lakikras/public_html/lakikras_laki.sql</a></div></td><td align=center><div class="ctd">17/12/2016 10:15:16</div></td><td align=center><div class="ctd">07/10/2016 12:28:18</div></td><td align=center><div class="ctd">30.70 Mb</div></td><td class="hidd"><div class="hidd">da39a3ee5e6b4b0d3255bfef95601890afd80709</div></td><td class="hidd"><div class="hidd">1481962516</div></td><td class="hidd"><div class="hidd">1475832498</div></td><td class="hidd"><div class="hidd">id_z8138135</div></td></tr><tr class="tbg0" o="id_z2110502"><td><div class="it"><a class="it">/home/lakikras/public_html/lakikras_laki_dumputf8.sql</a></div></td><td align=center><div class="ctd">17/12/2016 10:15:19</div></td><td align=center><div class="ctd">07/10/2016 13:21:33</div></td><td align=center><div class="ctd">42.54 Mb</div></td><td class="hidd"><div class="hidd">da39a3ee5e6b4b0d3255bfef95601890afd80709</div></td><td class="hidd"><div class="hidd">1481962519</div></td><td class="hidd"><div class="hidd">1475835693</div></td><td class="hidd"><div class="hidd">id_z2110502</div></td></tr><tr class="tbg1" o="id_z1722836"><td><div class="it"><a class="it">/home/lakikras/public_html/engine_old/cache/system/category.php</a></div></td><td align=center><div class="ctd">17/12/2016 10:15:40</div></td><td align=center><div class="ctd">06/10/2016 18:40:33</div></td><td align=center><div class="ctd">932.04 Kb</div></td><td class="hidd"><div class="hidd">da39a3ee5e6b4b0d3255bfef95601890afd80709</div></td><td class="hidd"><div class="hidd">1481962540</div></td><td class="hidd"><div class="hidd">1475768433</div></td><td class="hidd"><div class="hidd">id_z1722836</div></td></tr><tr class="tbg0" o="id_z1274882"><td><div class="it"><a class="it">/home/lakikras/public_html/engine_old/modules/ajax/error_log</a></div></td><td align=center><div class="ctd">17/12/2016 10:15:42</div></td><td align=center><div class="ctd">06/10/2016 18:52:31</div></td><td align=center><div class="ctd">20.67 Mb</div></td><td class="hidd"><div class="hidd">da39a3ee5e6b4b0d3255bfef95601890afd80709</div></td><td class="hidd"><div class="hidd">1481962542</div></td><td class="hidd"><div class="hidd">1475769151</div></td><td class="hidd"><div class="hidd">id_z1274882</div></td></tr><tr class="tbg1" o="id_z7280456"><td><div class="it"><a class="it">/home/lakikras/public_html/engine_old/modules/error_log</a></div></td><td align=center><div class="ctd">17/12/2016 10:15:41</div></td><td align=center><div class="ctd">06/10/2016 18:40:29</div></td><td align=center><div class="ctd">2.07 Mb</div></td><td class="hidd"><div class="hidd">da39a3ee5e6b4b0d3255bfef95601890afd80709</div></td><td class="hidd"><div class="hidd">1481962541</div></td><td class="hidd"><div class="hidd">1475768429</div></td><td class="hidd"><div class="hidd">id_z7280456</div></td></tr><tr class="tbg0" o="id_z7517332"><td><div class="it"><a class="it">/home/lakikras/public_html/lakikras_laki_sp1251.sql</a></div></td><td align=center><div class="ctd">17/12/2016 10:15:22</div></td><td align=center><div class="ctd">07/10/2016 12:32:31</div></td><td align=center><div class="ctd">30.70 Mb</div></td><td class="hidd"><div class="hidd">da39a3ee5e6b4b0d3255bfef95601890afd80709</div></td><td class="hidd"><div class="hidd">1481962522</div></td><td class="hidd"><div class="hidd">1475832751</div></td><td class="hidd"><div class="hidd">id_z7517332</div></td></tr></tbody></table></div><div class=clear style="margin: 20px 0 0 0"></div></div><div class="note_warn">В не .php файле содержится стартовая сигнатура PHP кода. Возможно, там вредоносный код</div><div class="warn"><div class="flist"><table cellspacing=1 cellpadding=4 border=0 id="table_8468393"><thead><tr class="tbgh0"><th width=70%>Путь</th><th>Изменение свойств</th><th>Изменение содержимого</th><th width=90>Размер</th><th width=0 class="hidd">CRC32</th><th width=0 class="hidd"></th><th width=0 class="hidd"></th><th width=0 class="hidd"></th></tr></thead><tbody><tr class="tbg0" o="id_z2525328"><td><div class="it"><a class="it">/home/lakikras/public_html/php.ini</a></div><div class="details"><span class="line_no">1</span>…<span class="marker">&nbsp;</span></div></td><td align=center><div class="ctd">02/02/2017 12:08:27</div></td><td align=center><div class="ctd">07/10/2016 10:20:12</div></td><td align=center><div class="ctd">38.40 Kb</div></td><td class="hidd"><div class="hidd">da39a3ee5e6b4b0d3255bfef95601890afd80709</div></td><td class="hidd"><div class="hidd">1486030107</div></td><td class="hidd"><div class="hidd">1475824812</div></td><td class="hidd"><div class="hidd">id_z2525328</div></td></tr></tbody></table></div><div class=clear style="margin: 20px 0 0 0"></div></div>
+<div class="note_warn">Версии найденных CMS<br/>Data Life Engine v9.2</div>
+ 
+	<div class="footer">
+	   <div class="disclaimer"><span class="vir">[!]</span> Отказ от гарантий: невозможно гарантировать обнаружение всех вредоносных скриптов. Поэтому разработчик сканера не несет ответственности за возможные последствия работы сканера AI-Bolit или неоправданные ожидания пользователей относительно функциональности и возможностей.
+   </div>
+   <div class="thanx">
+      Замечания и предложения по работе скрипта, а также не обнаруженные вредоносные скрипты вы можете присылать на <a href="mailto:ai@revisium.com">ai@revisium.com</a>.<br/>
+      Также будем чрезвычайно благодарны за любые упоминания сканера AI-Bolit на вашем сайте, в блоге, среди друзей, знакомых и клиентов. <br/>Ссылку можно поставить на страницу <a href="https://revisium.com/ai/">https://revisium.com/ai/</a>.<br/> 
+     <p>Получить консультацию или задать вопросы можно по email <a href="mailto:ai@revisium.com">ai@revisium.com</a>.</p> 
+	</div>
+	</div>
+	
+<script language="javascript">
+
+function hsig(id) {
+  var divs = document.getElementsByTagName("tr");
+  for(var i = 0; i < divs.length; i++){
+     
+     if (divs[i].getAttribute('o') == id) {
+        divs[i].innerHTML = '';
+     }
+  }
+
+  return false;
+}
+
+
+$(document).ready(function(){
+    $('#table_crit').dataTable({
+       "aLengthMenu": [[100 , 500, -1], [100, 500, "All"]],
+       "aoColumns": [
+                                     {"iDataSort": 7, "width":"70%"},
+                                     {"iDataSort": 5},
+                                     {"iDataSort": 6},
+                                     {"bSortable": true},
+                                     {"bVisible": false},
+                                     {"bVisible": false},
+                                     {"bVisible": false},
+                                     {"bVisible": false}
+                     ],
+		"paging": true,
+       "iDisplayLength": 500,
+		"oLanguage": {
+			"sLengthMenu": "Отображать по _MENU_ записей",
+			"sZeroRecords": "Ничего не найдено",
+			"sInfo": "Отображается c _START_ по _END_ из _TOTAL_ файлов",
+			"sInfoEmpty": "Нет файлов",
+			"sInfoFiltered": "(всего записей _MAX_)",
+			"sSearch":       "Поиск:",
+			"sUrl":          "",
+			"oPaginate": {
+				"sFirst": "Первая",
+				"sPrevious": "Предыдущая",
+				"sNext": "Следующая",
+				"sLast": "Последняя"
+			},
+			"oAria": {
+				"sSortAscending": ": активировать для сортировки столбца по возрастанию",
+				"sSortDescending": ": активировать для сортировки столбцов по убыванию"	
+			}
+		}
+
+     } );
+
+});
+
+$(document).ready(function(){
+    $('#table_vir').dataTable({
+       "aLengthMenu": [[100 , 500, -1], [100, 500, "All"]],
+		"paging": true,
+       "aoColumns": [
+                                     {"iDataSort": 7, "width":"70%"},
+                                     {"iDataSort": 5},
+                                     {"iDataSort": 6},
+                                     {"bSortable": true},
+                                     {"bVisible": false},
+                                     {"bVisible": false},
+                                     {"bVisible": false},
+                                     {"bVisible": false}
+                     ],
+       "iDisplayLength": 500,
+		"oLanguage": {
+			"sLengthMenu": "Отображать по _MENU_ записей",
+			"sZeroRecords": "Ничего не найдено",
+			"sInfo": "Отображается c _START_ по _END_ из _TOTAL_ файлов",
+			"sInfoEmpty": "Нет файлов",
+			"sInfoFiltered": "(всего записей _MAX_)",
+			"sSearch":       "Поиск:",
+			"sUrl":          "",
+			"oPaginate": {
+				"sFirst": "Первая",
+				"sPrevious": "Предыдущая",
+				"sNext": "Следующая",
+				"sLast": "Последняя"
+			},
+			"oAria": {
+				"sSortAscending":  ": активировать для сортировки столбца по возрастанию",
+				"sSortDescending": ": активировать для сортировки столбцов по убыванию"	
+			}
+		},
+
+     } );
+
+});
+
+if ($('#table_warn0')) {
+    $('#table_warn0').dataTable({
+       "aLengthMenu": [[100 , 500, -1], [100, 500, "All"]],
+		"paging": true,
+       "aoColumns": [
+                                     {"iDataSort": 7, "width":"70%"},
+                                     {"iDataSort": 5},
+                                     {"iDataSort": 6},
+                                     {"bSortable": true},
+                                     {"bVisible": false},
+                                     {"bVisible": false},
+                                     {"bVisible": false},
+                                     {"bVisible": false}
+                     ],
+			         "iDisplayLength": 500,
+			  		"oLanguage": {
+			  			"sLengthMenu": "Отображать по _MENU_ записей",
+			  			"sZeroRecords": "Ничего не найдено",
+			  			"sInfo": "Отображается c _START_ по _END_ из _TOTAL_ файлов",
+			  			"sInfoEmpty": "Нет файлов",
+			  			"sInfoFiltered": "(всего записей _MAX_)",
+			  			"sSearch":       "Поиск:",
+			  			"sUrl":          "",
+			  			"oPaginate": {
+			  				"sFirst": "Первая",
+			  				"sPrevious": "Предыдущая",
+			  				"sNext": "Следующая",
+			  				"sLast": "Последняя"
+			  			},
+			  			"oAria": {
+			  				"sSortAscending":  ": активировать для сортировки столбца по возрастанию",
+			  				"sSortDescending": ": активировать для сортировки столбцов по убыванию"	
+			  			}
+		}
+
+     } );
+}
+
+if ($('#table_warn1')) {
+    $('#table_warn1').dataTable({
+       "aLengthMenu": [[100 , 500, -1], [100, 500, "All"]],
+		"paging": true,
+       "aoColumns": [
+                                     {"iDataSort": 7, "width":"70%"},
+                                     {"iDataSort": 5},
+                                     {"iDataSort": 6},
+                                     {"bSortable": true},
+                                     {"bVisible": false},
+                                     {"bVisible": false},
+                                     {"bVisible": false},
+                                     {"bVisible": false}
+                     ],
+			         "iDisplayLength": 500,
+			  		"oLanguage": {
+			  			"sLengthMenu": "Отображать по _MENU_ записей",
+			  			"sZeroRecords": "Ничего не найдено",
+			  			"sInfo": "Отображается c _START_ по _END_ из _TOTAL_ файлов",
+			  			"sInfoEmpty": "Нет файлов",
+			  			"sInfoFiltered": "(всего записей _MAX_)",
+			  			"sSearch":       "Поиск:",
+			  			"sUrl":          "",
+			  			"oPaginate": {
+			  				"sFirst": "Первая",
+			  				"sPrevious": "Предыдущая",
+			  				"sNext": "Следующая",
+			  				"sLast": "Последняя"
+			  			},
+			  			"oAria": {
+			  				"sSortAscending":  ": активировать для сортировки столбца по возрастанию",
+			  				"sSortDescending": ": активировать для сортировки столбцов по убыванию"	
+			  			}
+		}
+
+     } );
+}
+
+
+</script>
+<!-- [][0]  -->
+ </body>
+</html>

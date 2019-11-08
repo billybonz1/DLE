@@ -1,0 +1,53 @@
+<style>
+ul.c42eeb {
+float: left;
+width: auto !important;
+padding: 0 !important;
+margin: 0 !important;
+font-size: 12px !important;
+}
+ul li.left {
+float:left;
+display: block;
+padding: 5px !important;
+text-align: left !important;
+font-size: 12px !important;
+background: none !important;
+}
+.c42eeb a {
+font-weight: normal;
+font-size: 12px !important;
+}
+.c42eeb .text {
+font-size: 12px !important;
+padding: 3px 0 !important;
+line-height: normal !important;
+}
+.c42eeb .host {
+font-weight: normal;
+font-size: 12px !important;
+padding: 3px 0 !important;
+line-height: normal !important;
+}
+.c42eeb ul {
+padding: 0 !important;
+margin: 0 !important;
+}
+.c42eeb ul li {
+padding: 0 !important;
+margin: 0 !important;
+background: none !important;
+}
+</style>
+<ul class="c42eeb">
+<{block}>
+  <li class="left">
+    <ul>
+<{head_block}><li><{link}></li><{/head_block}>
+<li class="text"><{text}></li>
+<li class="host"><{host}></li>
+</ul>
+
+  </li>
+<{/block}>
+</ul>

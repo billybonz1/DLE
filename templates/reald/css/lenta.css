@@ -1,0 +1,24 @@
+/*ЛЕНТА*/ 
+#lenta { 
+   background: URL('/templates/skyline/images/lenta/lenta_bg.gif') repeat-x top right;   /* Путь к фоновому изображению lenta_bg.gif*/ 
+   display: block; 
+   width:1190px; 
+   height: 134px; 
+   white-space: nowrap; 
+   position:relative; 
+   overflow: hidden; 
+   border-top: solid 1px; 
+   border-bottom: solid 1px;
+   }   
+#lenta DIV { position:relative; white-space:nowrap; } 
+#lenta .left, #lenta .right { position:absolute; background:#000; display:block; height:107px; top:15px; opacity:.4; filter:alpha(opacity=40); } 
+#lenta .left IMG, #lenta .right IMG { border: none; margin: 40px 5px; }   
+#lenta .left { left:0px; text-align:right; } 
+#lenta .right { right:0px; } 
+#lenta_in { display:block; position:relative; left:30px; top:15px; } 
+#lenta IMG { border: solid 3px #87c0dd; } 
+#lenta A { display: inline-block; margin: 0px 1px; position: relative; text-decoration: none; }  
+#lenta A SPAN {left:2px; bottom:2px; font-weight:normal; font-family:tahoma; font-size:10px; color:#000000; position: absolute; overflow: hidden; white-space:normal; display:none; padding:3px; width:97px; bottom:0px; left:0px; background:#FFFFFF; font-size: 11px; opacity:.8; filter:alpha(opacity=80); }  
+#lenta A:hover SPAN {left:2px; bottom:2px; font-weight:normal; font-family:tahoma; font-size:10px; color:#000000; display:block; }  
+#lenta A SPAN STRONG {left:2px; bottom:2px; font-weight:normal; font-family:tahoma; font-size:10px; color:#000000; display:block; }  
+ 

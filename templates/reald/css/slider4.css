@@ -1,0 +1,97 @@
+/* = Общие стили HTM */
+#1F5276
+
+/* Задаем сброс обтекания */
+.clear {
+  margin-top: -1px;
+  height: 1px;
+  clear:both;
+  zoom: 1;
+}    
+/* Slider */
+.slider {
+  /* Ширина контейнера */
+  width: 800px;
+  /* Внешние тступы сверху и снизу 
+  margin: 0px auto;*/
+  /* Внутренние отступы для ссылок navy */
+  padding: 0 3px;
+  /* Позиционирование */
+  position: relative;
+  /* Скроем то что выходит за границы */
+  overflow: hidden;
+  background: rgb(254, 106, 0); color: #fff;
+}
+/* Двойной клик по ссылкам вперед/назад вызывает выделение всех элементов слайдера,
+поэтому предотвращаем это */
+.slider::-moz-selection { background: transparent; color: #fff; text-shadow: none; }
+.slider::selection { background: transparent; color: #fff; text-shadow: none; }
+
+.slide-list {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+.slide-wrap {
+  position: relative;
+  left: 0px;
+  top: 0;
+  /* максимально возможная ширина обертки слайдера */
+  width: 10000000px;
+}
+.slide-item {
+  /* Ширина слайда */
+width: 780px;
+padding-top: 2px;
+padding-bottom: 6px;
+float: left;
+
+}
+.slide-title {
+  /* Шрифт */
+  font: bold 16px monospace;
+  /* Указываем, что элемент блочный */
+  display: block;
+}
+
+/* навигация вперед/назад */
+.navy {
+  /* абсолютное позиционирование */
+  position: absolute;
+  top: -1px;
+  z-index: 1;
+  height: 100%;
+  /* ширина ссылок */
+  width: 30px;
+  cursor: pointer;
+}
+.prev-slide {
+  left:  -12px;
+  background: rgb(254, 106, 0) url(../images/bg/left-arrow.png) 13px 40% no-repeat;
+  border-radius: 5px 0 0 5px;
+-webkit-border-radius: 5px 0 0 5px;
+}
+
+.next-slide {
+  right: 2px;
+  background: rgb(254, 106, 0) url(../images/bg/right-arrow.png) 13px 40% no-repeat;
+border-radius: 0 5px 5px 0;
+-webkit-border-radius: 0 5px 5px 0;
+ }
+.navy.disable {
+  background: #A757EE;
+}
+
+/* навигация старт/пауза */
+/*.auto {
+  width: 7px;
+  height: 11px;
+  cursor: pointer;
+  margin: 10px auto;
+}
+.play {
+  background: url(bg/play.png) center no-repeat;
+}
+.pause {
+  background: url(bg/pause.png) center no-repeat;
+}

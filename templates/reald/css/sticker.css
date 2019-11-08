@@ -1,0 +1,352 @@
+.sticker{
+    width: 406px;
+    z-index: 500;
+    line-height: 1; 
+    position: fixed; 
+    top: 190px; 
+}
+
+.sticker .sticker_hide{
+  display: block; 
+  width: 140px; 
+  height: 106px; 
+  background: url(../images/contact_tab.png) no-repeat 0% 0% ;
+  position: absolute; 
+  top: 0px; 
+  left: 0px;
+}
+
+.sticker .sticker_hide_close {
+    display: block;
+    position: absolute;
+    right: 5px;
+    top: -5px;
+    width: 18px;
+    height: 18px;
+    z-index: 100;
+
+    background: url(../images/icon-close-16.png) left center no-repeat;
+}
+
+.sticker .sticker_visible{
+  border: 4px solid rgb(19, 24, 148);
+  border-right: none;
+  left: 140px;
+    position: absolute;
+    top: 13px;
+  right: 0px;
+  padding-top: 0px;
+  background: #ffffff;
+  border-radius: 0 0 0 10px;
+   -moz-border-radius: 0 0 0 10px;
+   -khtml-border-radius: 0 0 0 10px;
+   -webkit-border-radius: 0 0 0 10px;
+     margin-left: -60px;
+}
+
+.sticker .register{
+  color: #ffffff;
+  text-decoration: none;
+  background: #22be02;
+  line-height: 43px;
+  height: 43px;
+  display: block;
+  padding: 0px 0px 0px 10px;
+  font-weight:  bold;
+  font-size: 15px;
+  background: url(../images/register_bg.png) repeat-x 0px 0px;
+  text-shadow: -1px -1px 1px #148f00;
+  border-radius: 6px;
+   -moz-border-radius: 6px;
+   -khtml-border-radius: 6px;
+   -webkit-border-radius: 6px;
+}
+
+.sticker input.register{
+  font-size: 19px;
+  text-align: center;
+  border: 1px solid #17af00;
+  width: 100%;
+  padding: 0px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.sticker .has-placeholder {
+    color: grey;
+}
+
+.sticker .register span{
+  background: url(../images/register.png) no-repeat right center;
+  padding-right: 35px;
+  display: block;
+}
+
+.sticker input{
+  color: #111111;
+  font-size: 12px;
+  height: 26px;
+  line-height: 26px;
+  padding: 0px 7px;
+  border: 1px solid #999999;
+  width: 214px;
+  margin-bottom: 10px;
+  border-radius: 2px;
+   -moz-border-radius: 2px;
+   -khtml-border-radius: 2px;
+   -webkit-border-radius: 2px;
+}
+
+.sticker .register_social {
+  width: 115px;
+  float: left;
+  margin-top: 120px;
+}
+
+.sticker .register_social img{
+  float: left;
+}
+
+.sticker .register_social a{
+  font-size: 13px;
+  line-height: 31px;
+  margin-left: -17px;
+}
+
+.sticker .caf4901{
+  color: #af4901;
+}
+
+.sticker .c0ea20e{
+  color: #0ea20e;
+}
+
+.sticker .fs11{
+  font-size: 11px;
+}
+
+.sticker .fs12{
+  font-size: 12px;
+}
+
+.sticker .fs13{
+  font-size: 13px;
+}
+
+.sticker .fs14{
+  font-size: 14px;
+}
+
+.sticker .fs15{
+  font-size: 15px;
+}
+
+.sticker .fs16{
+  font-size: 16px;
+}
+
+.sticker .fs18{
+  font-size: 18px;
+}
+
+.sticker .fs22{
+  font-size: 18px;
+}
+
+.sticker .lh14{
+  line-height: 14px;
+}
+
+.sticker .lh16{
+  line-height: 16px;
+}
+
+.sticker .lh18{
+  line-height: 18px;
+}
+/**
+ ** Sticker for user subscribe
+ **/
+.sticker {
+    line-height: 1;
+    position: fixed;
+    top: 145px;
+    width: 346px;
+    z-index: 249;
+    right: -266px;
+}
+.sticker.visible {
+  right: 0px !important;
+}
+.sticker .sticker_hide {
+    background: url("../images/contact_tab.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 95px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 80px;
+}
+.error-for-input {
+  color: red;
+  display: none;
+  font-size: 10px;
+  margin: -10px 0 0;
+  padding: 2px 0 8px;
+  width: 110%;
+}
+.visible-error {
+  display: block !important;
+}
+#vk_groups {
+  margin-top: 0px;
+  overflow-y: hidden;
+  margin-left: 0px;
+  height: 140px !important;
+}
+#vk_groups iframe{
+  height: 140px !important;
+}
+#sticker-reg-frame {
+  height: 464px;
+}
+
+.sticker_popup .lightbox-galery{
+  width: 595px;
+  padding: 25px 30px;
+}
+
+.sticker_popup .close-popup {
+  margin-left: 305px;
+}
+
+.sticker_popup h3{
+  font-size: 24px;
+  font-weight: bold;
+  color: #30ae0a;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.sticker_popup .sticker_popup_img{
+  width: 200px;
+  float: left;
+  text-align: center;
+}
+
+.sticker_popup .sticker_popup_form{
+  float: left;
+  width: 393px;
+  color: #000000;
+  font-size: 18px;
+  padding-top: 5px;
+}
+
+.sticker_popup .input-container {
+    width: 210px;
+    float: left;
+}
+
+ .sticker_popup .register{
+  background: #22be02 url(../images/register_bg.png) repeat-x 0px 0px;
+  border: none;
+  border-top: 1px solid #c0ecab;
+  border-bottom: 1px solid #2c801a;
+  display: block;
+  float: right;
+  border-radius: 6px;
+   -moz-border-radius: 6px;
+   -khtml-border-radius: 6px;
+   -webkit-border-radius: 6px;
+    margin-top: 92px;
+}
+
+ .sticker_popup .register input{
+  font-size: 18px; 
+  font-weight: bold;
+  color: #fefefe;
+   border: none;
+   background: url(../images/register_button.png) no-repeat 10px center;
+   padding-left: 40px; 
+   padding-right: 10px;
+   text-shadow: -1px -1px 1px #148f00;
+   line-height: 41px;
+  height: 41px;
+  display: block;
+  cursor: pointer;
+ }
+
+.sticker_popup input[type=text] {
+    border: 1px solid #999999;
+    border-radius: 2px 2px 2px 2px;
+    color: #111111;
+    font-size: 14px;
+    height: 30px;
+    /*line-height: 36px;*/
+
+    margin-bottom: 0px;
+    margin-top: 12px;
+
+
+    padding: 0 9px;
+    width: 190px;
+    font-family: Arial;
+    font-style: italic;
+    display: block;
+}
+
+.sticker_popup .sticker_popup_line{
+  position: relative;
+  border-top: 1px solid #d8d8d8;
+  color: #d8d8d8;
+  font-size: 18px;  
+  line-height: 18px;
+  margin-top: 29px;
+  margin-bottom: 33px;
+  height: 1px;
+}
+
+.sticker_popup .sticker_popup_line span{
+  position: absolute;
+  top: -12px;
+  width: 100%;
+  text-align: center;
+}
+
+.sticker_popup .sticker_popup_line span strong{
+  background: #ffffff;
+  padding: 0px 10px;
+}
+
+.sticker_popup .sticker_social{
+  font-size: 14px; 
+  color:#111111; 
+  line-height: 14px; 
+  text-align: center;
+}
+
+.sticker_popup #vk_groups{
+  margin: 15px auto 5px;
+}
+
+.sticker_popup .error-for-input {
+    padding: 0;
+    width: 100%;
+    margin: 0 0 -7px;
+}
+
+.register_last{
+  color: #000000;
+  font: 14px;
+  text-align: center;
+  line-height: 22px;
+}
+
+.register_last .register_last_img{
+  margin-bottom: 48px;
+  margin-top: 30px;
+}
+
+.register_last strong{
+  color: #b04b00;
+}

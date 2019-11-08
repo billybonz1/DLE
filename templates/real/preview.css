@@ -1,0 +1,202 @@
+/* 
+=============================================================
+This Skin for DataLife Engine Developed by DLETemplates.com
+Copyright © 2005-2007 DLETemplates.com  All Rights Reserved.
+
+File 'preview.css' - Cascading Style Sheet (CSS) Document
+=============================================================
+*/
+
+/* ==================== */
+
+html, body {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  background-color: #FFFFFF;
+  font-size: 11px;
+  font-family: tahoma;
+  color: #757575;  /* цвет текста задается для загрузчика, чтобы не вносить изменений в главный index.php */
+}
+table {
+  border: 0px;
+  border-collapse: collapse;
+}
+table td {
+  padding: 0px;
+}
+
+/* ==================== */
+
+.category {
+  color: #757575;
+  font-size: 11px;    /* ! */
+  font-family: tahoma;  /* ! */
+  text-decoration: none;
+}
+.category a {
+  color: #E34000;
+  text-decoration: none;
+}
+.category a:hover {
+  color: #E34000;
+  text-decoration: underline;
+}
+
+/* ==================== */
+
+.slink {
+  color: #757575;
+  font-size: 11px;    /* ! */
+  font-family: tahoma;  /* ! */
+  text-decoration: none;
+}
+.slink a:active, .slink a:visited, .slink a:link {
+  color: #E34000;
+  text-decoration: none;
+}
+.slink a:hover {
+  color: #E34000;
+  text-decoration: underline;
+}
+
+/* ==================== */
+
+.copy {
+  color: #757575;
+  font-size: 11px;    /* ! */
+  font-family: tahoma;  /* ! */
+  text-decoration: none;
+}
+.copy a:active, .copy a:visited, .copy a:link {
+  color: #757575;
+  text-decoration: none;
+}
+.copy a:hover {
+  color: #4b73d4;
+  text-decoration: underline;
+}
+
+/* ==================== */
+
+.stext {
+  color: #757575;
+  font-size: 11px;    /* ! */
+  font-family: tahoma;  /* ! */
+  text-decoration: none;
+}
+.stext a:active, .stext a:visited, .stext a:link {
+  color: #4b73d4;
+  text-decoration: none;
+}
+.stext a:hover {
+  color: #4b73d4;
+  text-decoration: underline;
+}
+
+/* ==================== */
+
+.ntitle {
+  color: #636363;
+  font-size: 12px;
+  font-weight: bold;
+}
+.ntitle a {
+  color: #4B73D4;
+  text-decoration: none;
+}
+.ntitle a:hover {
+  color: #4B73D4;
+  text-decoration: underline;
+}
+
+/* ==================== */
+
+.ctitle {
+  color: #636363;
+  font-size: 11px;
+  font-weight: normal;
+}
+.ctitle a {
+  color: #4B73D4;
+  text-decoration: none;
+}
+.ctitle a:hover {
+  color: #4B73D4;
+  text-decoration: underline;
+}
+
+/* ==================== */
+
+.news {
+  color: #757575;
+  font-size: 11px;    /* ! */
+  font-family: tahoma;  /* ! */
+  text-align: justify;
+  text-align: center;
+}
+.news a {
+  color: #4B73D4;
+  text-decoration: none;
+}
+.news a:hover {
+  color: #4B73D4;
+  text-decoration: underline;
+}
+
+/* CUSTOM STYLES FOR DLETEMPLATES.COM SKIN */
+
+.a_block_12 {
+  background-image: url(../../templates/Default/images/dlet_artblock_12.gif);
+  background-repeat: repeat-x;
+}
+.a_block_22 {
+  background-image: url(../../templates/Default/images/dlet_artblock_22.gif);
+  background-repeat: repeat-x;
+}
+.a_block_32 {
+  background-image: url(../../templates/Default/images/dlet_artblock_32.gif);
+  background-repeat: repeat-x;
+}
+.a_block_42 {
+  background-image: url(../../templates/Default/images/dlet_artblock_42.gif);
+  background-repeat: repeat-x;
+}
+.a_block_52 {
+  background-image: url(../../templates/Default/images/dlet_artblock_52.gif);
+  background-repeat: repeat-x;
+}
+.a_block_61 {
+  background-image: url(../../templates/Default/images/dlet_artblock_61.gif);
+  background-repeat: repeat-y;
+}
+.a_block_63 {
+  background-image: url(../../templates/Default/images/dlet_artblock_63.gif);
+  background-repeat: repeat-y;
+}
+.a_block_72 {
+  background-image: url(../../templates/Default/images/dlet_artblock_72.gif);
+  background-repeat: repeat-x;
+}
+.a_block_82 {
+  background-image: url(../../templates/Default/images/dlet_artblock_82.gif);
+  background-repeat: repeat-x;
+}
+.quote {
+  color: #757575;
+  background-color: #f2f2f2;
+  border: 1px dotted #bebebe;
+  text-align: justify;
+  padding: 5px;
+}
+
+/* ==================== Tэг CODE */
+
+.scriptcode {
+  color: #757575;
+  background-color: #f2f2f2; 
+  border: 1px dotted #bebebe;
+  text-align: left;
+  /*text-align: center;*/
+  padding: 5px;
+}
