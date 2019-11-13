@@ -8,7 +8,7 @@ $config = array (
 
 'http_home_url' => "https://laki-kraski.com.ua/",
 
-'charset' => "windows-1251",
+'charset' => "utf-8",
 
 'description' => "Лаки, Краски, Эмали. Николаев. Дешевые цены. Доставка",
 

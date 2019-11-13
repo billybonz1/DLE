@@ -1,0 +1,4 @@
+[13-Sep-2018 03:45:47 Europe/Helsinki] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/alt/php53/usr/lib64/php/modules/dbase.so' - /opt/alt/php53/usr/lib64/php/modules/dbase.so: undefined symbol: _php_math_number_format_ex in Unknown on line 0
+[13-Sep-2018 03:59:42 Europe/Helsinki] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/alt/php53/usr/lib64/php/modules/dbase.so' - /opt/alt/php53/usr/lib64/php/modules/dbase.so: undefined symbol: _php_math_number_format_ex in Unknown on line 0
+[13-Nov-2019 01:23:57 Europe/Helsinki] PHP Deprecated:  preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead in /home/lakikras/public_html/engine/modules/show.short.php on line 164
+[13-Nov-2019 01:23:57 Europe/Helsinki] PHP Deprecated:  preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead in /home/lakikras/public_html/engine/modules/show.short.php on line 164
